@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block content %}
+
+<!-- ARTICLES -->
+<h1 class="title">
+  
+  {% if title %}
+    NOS ARTICLE {{ title|upper }}
+    {% else %}
+      NOS ARTICLES 
+  {% endif %}
+  
+</h1>
+
+<section class="container">
+
+  {% for article in page_obj %}
+      {% include 'article.html' %}
+  {% endfor %}
+
+  <div class="pagination">
+   
+     {% if page_obj.has_previous %}
+        <span><a href="?page={{ page_obj.previous_page_number }}">&laquo; precedent</a></span>
+      {% endif %}
+
+      {% if page_obj.has_next %}
+        <span><a href="?page={{ page_obj.next_page_number }}">suivant &raquo;</a></span>
+      {% endif %}
+  </div>
+</section>
+
+{% endblock content %}

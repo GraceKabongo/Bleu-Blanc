@@ -1,0 +1,37 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+  <div class="container">
+    <div class="search-page">
+      <form method="get">
+        <input type="text" name="search" id="search-input"/>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </form>
+
+      <ul>
+        {% for article in page_obj %}
+          {% include 'article.html' %}
+        {% endfor %}
+        
+        {% if is_empty %}
+          <h1>Aucun resultat</h1>
+        {% endif %}
+          
+      </ul>
+    </div>
+
+    <div class="pagination">
+   
+      {% if page_obj.has_previous %}
+          <span><a href="?search={{ query }}&page={{ page_obj.previous_page_number }}">&laquo; precedent</a></span>
+      {% endif %}
+
+      {% if page_obj.has_next %}
+          <span><a href="?search={{ query }}&page={{ page_obj.next_page_number }}">suivant &raquo;</a></span>
+      {% endif %}
+  
+    </div>
+  </div>
+
+{% endblock content %}

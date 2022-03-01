@@ -1,0 +1,29 @@
+<article class="article-card">
+  <div class="article-card-img">
+    <a href="{% url 'article' article.id %}">
+      {% if article.image %}
+      <img src="{{ article.image.url }}" alt="{{ article.title }}" />
+      {% else %}
+      <img
+        src="https://fatstacksblog.com/wp-content/uploads/2019/11/Person-writing-article-nov26.jpg.webp"
+        alt="article"
+      />
+      {% endif %}
+    </a>
+  </div>
+  <div class="article-card-info">
+    <div class="categorie-type">
+      <a href="{% url 'categorie' article.category.name %}"
+        ><span>{{ article.category|capfirst }}</span></a
+      >
+    </div>
+
+    <h2><a href="{% url 'article' article.id %}">{{ article.title }}</a></h2>
+
+    <div class="author">
+      Poster par <span>{{ article.author|capfirst }}</span>
+    </div>
+
+    <div class="description">{{ article.description }}</div>
+  </div>
+</article>

@@ -1,0 +1,43 @@
+<nav class="navbar">
+  <div class="logo-container">
+    <!-- HUMBERGER MENU -->
+    <button class="humberger" id="humberger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- ICON SOCIAL NETWORK -->
+    <div class="social">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+
+    <!-- LOGO BLEU-BLANC -->
+    <div class="logo">
+      <a href="{% url 'index' %}"><span>Bleu-Blanc</span></a>
+    </div>
+    <div class="search">
+      <a href="{% url 'search' %}">
+        <span>Recherche</span>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- NAVIGATION LINK-->
+  <div class="link">
+    <ul>
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li>
+        <a href="#" id="categorie-dropdown"
+          ><span>Categories</span> <i class="fa-solid fa-angle-down"></i
+        ></a>
+        <ul class="sub-menu-categorie" id="sub-menu-categorie"></ul>
+      </li>
+      <li><a href="#">A propos</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>

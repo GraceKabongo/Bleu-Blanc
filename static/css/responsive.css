@@ -1,0 +1,148 @@
+@media only screen and (max-width: 800px) {
+  article {
+    margin-bottom: 20px;
+  }
+
+  .title::after {
+    width: 20%;
+  }
+
+  .navbar .logo-container .humberger {
+    display: block;
+  }
+
+  .navbar .logo-container::after,
+  .navbar .logo-container .social,
+  .navbar .logo-container .search span {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .navbar .logo-container .logo {
+    font-size: 30px;
+  }
+
+  .navbar .link ul {
+    margin: 20px 0;
+    display: none;
+  }
+
+  .navbar .link li {
+    padding: 20px;
+    border-top: 2px solid rgba(128, 128, 128, 0.055);
+  }
+
+  .navbar .link li:nth-child(2) a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar .link .sub-menu-categorie {
+    position: static;
+    background-color: transparent;
+  }
+  .navbar .link .sub-menu-categorie li {
+    border: none;
+  }
+
+  .article-card {
+    display: block;
+    margin-bottom: 50px;
+    height: auto;
+  }
+
+  .article-card .article-card-info {
+    height: 100%;
+    padding: 10px 0 0;
+    margin: 0;
+  }
+
+  .article-card .article-card-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer .footer-container {
+    display: block;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+
+  .footer .footer-container h3 {
+    margin: 10px 0;
+    padding: 0;
+    border: none;
+  }
+
+  .footer .footer-container .quick-link,
+  .footer .footer-container .social-link {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .footer .footer-container .newsletter {
+    display: none;
+  }
+
+  .article-container {
+    width: 90%;
+  }
+
+  .article-title {
+    font-size: 3rem;
+  }
+
+  .article h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .title::after {
+    width: 30%;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .article-card {
+    display: block;
+    margin-bottom: 30px;
+    height: auto;
+  }
+
+  .article-card .article-card-info {
+    height: 100%;
+    padding: 10px 0 0;
+    margin: 0;
+  }
+  .article-card .article-card-info h2 {
+    font-size: 1.8rem;
+  }
+
+  .article-date {
+    font-size: 12px;
+  }
+
+  .article-img {
+    height: auto;
+  }
+
+  .article p {
+    text-align: justify;
+  }
+}
