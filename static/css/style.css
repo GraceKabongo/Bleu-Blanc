@@ -212,8 +212,8 @@ img {
 }
 
 .article-card .article-card-info h2 {
-  margin: 20px 0;
-  font-size: 2.4rem;
+  margin: 15px 0 5px 0;
+  font-size: 2rem;
   letter-spacing: 1.5;
   color: #424851;
 }
@@ -221,7 +221,7 @@ img {
 .article-card .article-card-info .author {
   color: #989da2;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .article-card .article-card-info .author span {
@@ -319,7 +319,7 @@ img {
 
 .article-title {
   margin: 50px 0 10px;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: black;
   font-family: "Libre Baskerville", serif;
 }

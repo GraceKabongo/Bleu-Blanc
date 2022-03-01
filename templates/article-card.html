@@ -21,7 +21,8 @@
     <h2><a href="{% url 'article' article.id %}">{{ article.title }}</a></h2>
 
     <div class="author">
-      Poster par <span>{{ article.author|capfirst }}</span>
+      Poster le {{ article.created_at.date }} | par
+      <span>{{ article.author|capfirst }}</span>
     </div>
 
     <div class="description">{{ article.description }}</div>

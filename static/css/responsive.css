@@ -99,6 +99,15 @@
   .article h2 {
     font-size: 1.5rem;
   }
+
+  .search-page #search-input {
+    width: 100%;
+  }
+
+  .search-page i {
+    left: 95%;
+    bottom: 12px;
+  }
 }
 
 @media only screen and (max-width: 655px) {
@@ -144,5 +153,13 @@
 
   .article p {
     text-align: justify;
+  }
+
+  .search-page i {
+    left: 90%;
+  }
+
+  .article-title {
+    font-size: 1.5rem;
   }
 }

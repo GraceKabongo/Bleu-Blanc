@@ -6,8 +6,9 @@
     <div class="article-header">
       <h1 class="article-title">{{ article.title|capfirst }}</h1>
       <div class="article-date">
-        <p>{{ article.created_at.date }}</p>
-        <p>Par {{ article.author|capfirst }}</p>
+        <p>Poster le {{ article.created_at.date }}</p> 
+        |
+        <p>par {{ article.author|capfirst }}</p>
       </div>
     </div>
 
